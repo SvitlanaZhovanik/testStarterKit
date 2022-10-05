@@ -5,9 +5,16 @@
     "description": "description",
     "canonical": "link"
   },
+  "header": {
+    "aria": "Логотип GoIT",
+    "button": "Відправити резюме"
+  },
   "hero": {
     "id": "hero",
-    "title": "Header-hero <p class=\"text-8xl\">test</p>"
+    "pretitle": "вакансія",
+    "title": "<span class=\"text-accent\">[ Sales Manager ]</span> віддалено",
+    "tags": ["# GoIT Україна", "# Відділ продажів "],
+    "alt": "захоплена ділова жінка тримає ноутбук кричить від радості святкує тріумфує"
   },
   "footer": {
     "id": "footer"

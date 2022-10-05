@@ -17,10 +17,7 @@ module.exports = {
       montserrat: ['Montserrat', 'sans-serif'], // class="font-montserrat"
       // exo: ['"Exo 2"', 'sans-serif'],
     },
-    // SHADOW
-    boxShadow: {
-      orange: '2px 8px 29px rgba(240, 127, 46, 0.2)', // class="shadow-orange"
-    },
+
     // THEME
     extend: {
       backgroundColor: theme => ({
@@ -28,6 +25,12 @@ module.exports = {
       }),
       backgroundImage: {
         check: "url('../images/check.svg')",
+      },
+
+      // SHADOW
+      boxShadow: {
+        orange: '2px 8px 29px rgba(240, 127, 46, 0.2)', // class="shadow-orange"
+        header: '0px 1px 3px rgba(0, 0, 0, 0.2)',
       },
       // ALL COLORS
       colors: {

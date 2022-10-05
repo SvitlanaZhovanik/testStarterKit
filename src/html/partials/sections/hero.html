@@ -1,0 +1,28 @@
+{% set section = hero %}
+<section class="relative flex">
+  <div class="hero w-3/5 h-[641px] pt-20 text-white items-end">
+    <div class="absolute right-[44%] w-[700px] grid gap-4">
+      <p class="uppercase">{{hero.pretitle}}</p>
+      <h1 class="font-extrabold text-7xl leading-tight w-[400px]">{{hero.title}}</h1>
+      <ul>
+        {%for tag in hero.tags%}
+        <li>{{tag}}</li>
+        {%endfor%}
+      </ul>
+    </div>
+  </div>
+
+  <div class="w-2/5 hero__block relative">
+    <img
+      src="../../../assets/images/hero-text.png"
+      alt="text"
+      class="absolute bottom-0 left-[-89%] w-[798px]"
+    />
+    <img
+      srcset="../../../assets/images/woman@1x.png 1x, ../../../assets/images/woman@2x.png 2x"
+      src="../../../assets/images/woman@1x.png"
+      alt="{{hero.alt}}"
+      class="absolute top-0 left-[-38px]"
+    />
+  </div>
+</section>

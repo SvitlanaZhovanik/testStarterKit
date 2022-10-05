@@ -1,7 +1,15 @@
-{% set section = hero %}
-<header class="section {{section.id}}">
-  <div class="container">
-    <h1>{{section.title}}</h1>
-    <button class="btn" data-modal-open>Open</button>
+{% set section = header %}
+<header class="section {{section.id}} shadow-header">
+  <div class="container flex justify-between">
+    <a href="/index.html" aria-label="{{header.aria}}"
+      ><img src="./assets/images/logo.png" loading="lazy" alt="{{header.aria}}"
+    /></a>
+    <button
+      type="button"
+      data-modal-open
+      class="text-white bg-accent w-[306px] h-12 px-[30px] py-[9px] uppercase font-bold text-xl leading-8"
+    >
+      {{section.button}}
+    </button>
   </div>
 </header>
